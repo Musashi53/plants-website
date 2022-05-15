@@ -1,0 +1,265 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  --first-color: rgb(62, 101, 83);
+  --first-color-alt: rgb(54, 89, 73);
+  --first-color-light: rgb(147, 189, 170);
+  --first-color-lighten: rgb(230, 239, 235);
+  --title-color: rgb(37, 40, 38);
+  --text-color: rgb(86, 93, 89);
+  --text-color-light: rgb(136, 145, 141);
+  --body-color: rgb(255, 255, 255);
+  --container-color: rgb(255, 255, 255);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== Margins Bottom ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --first-color-dark: hsl(152, 8%, 20%);
+  --title-color: rgb(242, 243, 242);
+  --text-color: rgb(189, 194, 191);
+  --body-color: rgb(28, 33, 31);
+  --container-color: rgb(38, 44, 41);
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme {
+  color: var(--title-color);
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.nav__btns {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/*========== 
+Color changes in some parts of 
+the website, in dark theme 
+==========*/
+.dark-theme .steps__bg,
+.dark-theme .questions {
+  background-color: var(--first-color-dark);
+}
+
+.dark-theme .product__circle,
+.dark-theme .footer__subscribe {
+  background-color: var(--container-color);
+}
+
+.dark-theme .scroll-header {
+  box-shadow: 0 1px 4px rgba(10, 11, 10, 0.3);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 1068px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--text-color-light);
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 0.5rem;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 1px 1px 4px rgba(29, 47, 39, 0.1);
+}
+.header__container {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.header__logo i {
+  margin-right: var(--mb-0-5);
+  color: var(--first-color);
+}
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__button {
+  display: inline-flex;
+}
+.header__button i {
+  font-size: 1.25rem;
+}
+.header .hamburguer {
+  margin-left: var(--mb-1);
+}
+
+.nav {
+  background-color: var(--body-color);
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 80%;
+  border-radius: 1rem 0 0 1rem;
+  padding: 1rem 0 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: -2px 0 4px rgba(29, 47, 39, 0.1);
+}
+.nav__close {
+  display: inline-flex;
+  padding-right: 1rem;
+  height: 2rem;
+}
+.nav__close i {
+  font-size: 1.5rem;
+}
+.nav__list {
+  padding-top: 3rem;
+}
+.nav__list li {
+  margin-bottom: var(--mb-1);
+}
+.nav__list li a {
+  font-weight: var(--font-medium);
+}
+
+.nav__open {
+  right: 0;
+}
+
+.active-link {
+  position: relative;
+  color: var(--first-color);
+}
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: var(--first-color);
+}
+
+@media screen and (min-width: 767px) {
+  .header {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__container {
+    width: 100%;
+  }
+  .header__buttons {
+    justify-self: flex-end;
+  }
+  .header .hamburguer {
+    display: none;
+  }
+
+  .nav {
+    width: 80%;
+    position: static;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    margin-right: 0;
+    justify-content: end;
+    margin-right: 3rem;
+  }
+  .nav__close {
+    display: none;
+  }
+  .nav__list {
+    width: 470px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__list li {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

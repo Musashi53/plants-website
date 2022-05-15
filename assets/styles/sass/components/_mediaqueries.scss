@@ -1,0 +1,48 @@
+@media screen and (min-width: 767px) {
+  .header {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+      width: 100%;
+    }
+
+    &__buttons {
+      justify-self: flex-end;
+    }
+
+    .hamburguer {
+      display: none;
+    }
+  }
+  
+  .nav {
+    width: 80%;
+    position: static;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    margin-right: 0;
+    justify-content: end;
+    margin-right: 3rem;
+    
+    &__close {
+      display: none;
+    }
+
+    &__list {
+      width: 470px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        margin: 0;
+      }
+    }
+  }
+}

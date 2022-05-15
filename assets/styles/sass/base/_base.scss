@@ -1,12 +1,14 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #FFF;
+  font-family: var(--body-font);
+  background-color: var(--body-color);
 }
 
 ul {
@@ -15,4 +17,9 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
 }

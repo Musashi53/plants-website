@@ -1,0 +1,17 @@
+.container {
+  max-width: 1068px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+
+
+::-webkit-scrollbar {
+  background-color: var(--text-color-light);
+  width: .6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: .5rem;
+}
