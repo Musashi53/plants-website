@@ -1,0 +1,61 @@
+.steps {
+  &__container {
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    padding-top: 3rem;
+  }
+
+  &__title {
+    color: #FFF;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  &__card {
+    background-color: var(--container-color);
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-2);
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    
+
+    &:hover  &__number {
+      transform: translateY(-.5rem);
+    }
+
+    &__number {
+      background-color: var(--first-color);
+      width: 45px;
+      height: 45px;
+      border-radius: 5px;
+      color: #FFF;
+      font-weight: var(--font-medium);
+      font-size: var(--h2-font-size);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: var(--mb-1-5);
+      transition: .3s;
+    }
+
+    &__title {
+      font-size: var(--h3-font-size);
+      font-weight: var(--font-semi-bold);
+      margin-bottom: var(--mb-1);
+    }
+
+    &__description {
+      font-size: var(--small-font-size);
+      
+    }
+  }
+}

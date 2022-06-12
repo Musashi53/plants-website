@@ -29,7 +29,6 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    // Responsive typography
     @media screen and (min-width: 968px){
         --big-font-size: 3.5rem;
         --h1-font-size: 2.25rem;
@@ -39,6 +38,8 @@
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
+
+    
 
     /*========== Font weight ==========*/
     --font-medium: 500;

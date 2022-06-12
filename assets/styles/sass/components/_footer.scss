@@ -1,0 +1,83 @@
+.footer {
+  &__container {
+    margin-bottom: 3rem;
+  }
+
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1.5rem;
+  }
+
+  &__subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--first-color-lighten);
+    padding: 1rem .5rem 1rem .5rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+
+    &__input {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      width: 50%;
+      height: auto;
+      font-size: var(--h3-font-size);
+
+      &::placeholder {
+        font-size: var(--h3-font-size);
+      }
+    }
+  }
+
+  &__address {
+    margin-bottom: 2rem;
+
+    &__list {
+      &__item {
+        font-size: var(--small-font-size);
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__contact {
+    margin-bottom: 2rem;
+
+    &-description {
+      font-size: var(--small-font-size);
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    &-socials {
+      font-size: var(--normal-font-size);
+
+      .social {
+        margin-right: .25rem;
+      }
+    }
+  }
+
+  &__credit {
+    margin-bottom: 3rem ;
+    &__cards {
+      .card {
+        width: 40px;
+      }
+    }
+  }
+
+  &__rodape {
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+}

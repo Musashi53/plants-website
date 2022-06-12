@@ -3,8 +3,10 @@
   width: 100%;
   top: 0;
   box-shadow: 1px 1px 4px rgba(29, 47, 39, 0.1);
+  background-color: var(--body-color);
+  transition: .4s;
+  z-index: var(--z-fixed);
   
-
   &__container {
     height: var(--header-height);
     display: flex;
@@ -12,18 +14,6 @@
     align-items: center;
   }
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    letter-spacing: -1px;
-
-    i {
-      margin-right: var(--mb-0-5);
-      color: var(--first-color);
-    }
-  }
-  
   &__buttons {
     display: flex;
     justify-content: space-between;
@@ -41,8 +31,6 @@
   .hamburguer {
     margin-left: var(--mb-1);
   }
-
-  
 }
 
 .nav {
@@ -57,6 +45,7 @@
   display: flex;
   justify-content: space-between;
   box-shadow: -2px 0 4px rgba(29, 47, 39, 0.1);
+  transition: .4s;
 
   &__close {
     display: inline-flex;
@@ -81,7 +70,7 @@
   }
 }
 
-.nav__open {
+.nav-open {
   right: 0;
 }
 

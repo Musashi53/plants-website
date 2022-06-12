@@ -1,0 +1,60 @@
+.home {
+  margin-top: 7rem;
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  &__socials {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    .social__follow,
+    .social__link {
+      color: var(--first-color);
+    }
+
+    .social__follow {
+      font-size: var(--smaller-font-size);
+      font-weight: var(--font-medium);
+      display: block;
+      transform: rotateZ(90deg);      
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+
+      .social__space {
+        margin-left: .5rem;
+        
+        width: 15px;
+        background-color: var(--first-color);
+        height: 2px;
+      }
+    }
+
+    
+  }
+
+  &__img {
+    width: 200px;
+  }
+
+  &__title {
+    font-size: var(--big-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-1-5);
+  }
+
+  &__description {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-2);
+  }
+}
+

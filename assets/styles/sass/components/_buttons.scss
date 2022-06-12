@@ -1,0 +1,20 @@
+.button {
+  display: inline-flex;
+  padding: 1.25rem 2rem 1.25em 2rem;
+  line-height: 1rem;
+  border-radius: .5rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  color: #FFF;
+  background-color: var(--first-color);
+  cursor: pointer;
+
+  &::hover {
+    background-color: var(--first-color-alt);
+  }  
+
+  &__icon {
+    margin-left: .5rem;
+  }
+}
+

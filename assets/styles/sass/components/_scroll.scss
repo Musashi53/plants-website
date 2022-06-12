@@ -1,0 +1,21 @@
+.scroll {
+  padding: .5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--first-color);
+  border-radius: 5px;
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  cursor: pointer;
+  border: none;
+  opacity: .8;
+  transition: 4s;
+
+
+  &__icon {
+    font-size: var(--normal-font-size);
+    color: #FFF;
+  }
+}

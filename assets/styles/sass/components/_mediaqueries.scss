@@ -1,3 +1,18 @@
+@media screen and (min-width: 567px) {
+  .steps {
+    &__cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+    }
+
+    &__card {
+      width: 47%;
+    }
+  }
+}
+
 @media screen and (min-width: 767px) {
   .header {
     height: calc(var(--header-height) + 1.5rem);
@@ -43,6 +58,156 @@
       li {
         margin: 0;
       }
+    }
+  }
+
+  .home {
+    margin-top: 11rem;
+    
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__main {
+      margin-right: 3rem;
+    }
+
+    &__content {
+      order: -1;
+      width: 400px;
+    }
+
+    &__img {
+      width: 280px;
+    }
+
+    &__socials {
+      top: 17rem;
+    }
+  }
+
+  .about {
+    &__container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    &__img {
+
+    }
+
+    &__content {
+      width: 45%;
+    }
+  }
+
+  .contact {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__content {
+      width: 400px;
+    }
+
+    &__form {
+      width: 50%;
+    }
+  }
+
+  .footer {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__content {
+      width: 45%;
+    }
+
+    &__contact {
+      
+    }
+  }
+}
+
+@media screen and (min-width: 967px) {
+  .home {
+    margin-top: 13rem;
+
+    &__content {
+      width: 500px;
+    }
+
+    &__main {
+      margin-right: 5rem;
+    }
+
+    &__img {
+      width: 350px;
+    }
+
+    &__socials {
+      top: 21rem;
+    }
+  }
+
+  .about {
+    &__img {
+      width: 400px;
+    }
+  }
+
+  .steps {
+    &__cards {
+      margin-left: var(--mb-2-5);
+      margin-right: var(--mb-2-5);
+    }
+
+    &__card {
+      width: 31%;
+    }
+  }
+
+  .products {
+    &__content {
+      max-width: 750px;
+    }
+
+    &__product {
+      width: 200px;
+
+      &:hover &__img {
+        transform: translateY(-1rem);
+      }
+
+      &__img {
+        width: 150px;
+      }
+
+      &__circle {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .container {
+    margin: auto;
+  }
+
+  .home {
+    &__main {
+      margin-right: 0;
+    }
+
+    &__socials {
+      position: static;
+      margin-top: 8rem;
     }
   }
 }
