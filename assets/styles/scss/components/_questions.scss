@@ -1,0 +1,38 @@
+.questions {
+  background-color: var(--first-color-lighten);
+
+  &__container {
+    padding: 6rem 0 2rem 0;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__details {
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 1rem .5rem 1rem .5rem;
+    border-radius: .5rem;
+
+    
+
+    &__summary {
+      transition: .3s;
+    }
+
+    &__description{
+      padding-top: 1rem;
+    }
+  }
+}
+
+.active-question {
+  background-color: var(--first-color);
+}

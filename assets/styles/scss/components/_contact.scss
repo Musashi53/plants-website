@@ -11,15 +11,19 @@
     &__title {
       font-size: var(--normal-font-size);
       font-weight: var(--font-medium);
+      margin-bottom: .5rem;
     }
 
     &__description {
+      display: inline-flex;
+      align-items: center;
       font-size: var(--normal-font-size);
       font-weight: var(--font-medium);
       
 
       .icon {
         font-size: var(--h2-font-size);
+        margin-right: .5rem;
       }
     }
   }

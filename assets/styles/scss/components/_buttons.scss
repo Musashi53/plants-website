@@ -8,13 +8,20 @@
   color: #FFF;
   background-color: var(--first-color);
   cursor: pointer;
+  
 
-  &::hover {
+  &:hover {
     background-color: var(--first-color-alt);
+    
+
+    & i {
+      transform: translateX(.5rem);
+    }
   }  
 
   &__icon {
     margin-left: .5rem;
+    transition: .3s;
   }
 }
 

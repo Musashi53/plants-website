@@ -1,5 +1,5 @@
 .container {
-  max-width: 968px;
+  max-width: 1168px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -19,6 +19,7 @@
   align-items: center;
   font-weight: bold;
   letter-spacing: -1px;
+  color: var(--text-color);
 
   &__icon {
     margin-right: var(--mb-0-5);

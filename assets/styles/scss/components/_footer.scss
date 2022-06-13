@@ -53,14 +53,21 @@
     &-description {
       font-size: var(--small-font-size);
       margin-bottom: 1rem;
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+
+      & i {
+        margin-right: .5rem;
+      }
     }
 
     &-socials {
-      font-size: var(--normal-font-size);
+      font-size: var(--h3-font-size);
+      
 
       .social {
         margin-right: .25rem;
+        color: var(--text-color);
       }
     }
   }
@@ -74,7 +81,7 @@
     }
   }
 
-  &__rodape {
+  &__copy {
     text-align: center;
     font-size: var(--smaller-font-size);
     font-weight: 300;

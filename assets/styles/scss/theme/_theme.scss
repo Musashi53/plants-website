@@ -25,6 +25,11 @@ body.dark-theme {
   background-color: var(--container-color);
 }
 
+.dark-theme .contact__form__input,
+.dark-theme .contact__form__textarea {
+  background-color: transparent;
+}
+
 .dark-theme .scroll-header {
   box-shadow: 0 1px 4px rgba(10, 11, 10, 0.3);
 }
